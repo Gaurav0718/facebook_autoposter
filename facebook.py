@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 driver = webdriver.Chrome()
 driver.get("https://www.facebook.com")
+driver.maximize_window()
 
 # Enter credentials
 email_element = driver.find_element(By.XPATH, '//*[@id="email"]')
